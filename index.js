@@ -54,6 +54,15 @@ const resolvers={
         deleteGame(_,args){
             _db.games=_db.games.filter((g)=>g.id !==args.id) 
             return _db.games
+        },
+        addGame(_, args){
+            let newGame={
+                ...args.game,
+            id:Math.floor(Math.random()*10000)
+            }
+            _db.games.push(newGame)
+            return newGame
+
         }
     }
 }

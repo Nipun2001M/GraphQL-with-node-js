@@ -5,7 +5,7 @@ let games = [
   {id: '4', title: 'Mario Kart', platform: ['Switch']},
   {id: '5', title: 'Pokemon Scarlet', platform: ['PS5', 'Xbox', 'PC']},
 ]
-
+ 
 let authors = [
   {id: '1', name: 'mario', verified: true},
   {id: '2', name: 'yoshi', verified: false},
